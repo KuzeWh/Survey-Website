@@ -36,11 +36,34 @@
             color: #EEEEEE;
         }
         table {
+            width: 100%;
+            background-color: #222831;
             color: #EEEEEE;
+            border-collapse: collapse;
         }
+
         th, td {
             padding: 10px;
+            text-align: center;
         }
+
+        th {
+            background-color: #393E46;
+        }
+
+        td {
+            background-color: #00ADB5;
+            color: #222831;
+        }
+
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: #393E46;
+        }
+
+        .table-striped tbody tr:nth-of-type(even) {
+            background-color: #00ADB5;
+        }
+
     </style>
 </head>
 <body>
@@ -56,11 +79,6 @@
         <!-- Grafik 2 -->
         <div class="chart-container mt-4">
             <canvas id="chart2"></canvas>
-        </div>
-
-        <!-- Grafik 3 -->
-        <div class="chart-container mt-4">
-            <canvas id="chart3"></canvas>
         </div>
 
         <!-- Tabel Data -->
